@@ -4,7 +4,7 @@
 
 	if(mysqli_connect_errno()){
 
-		echo "Conexión fallida !!",mysqli_connect_error();
+		echo "Conexión fallida !...",mysqli_connect_error();
 		exit();
 	}
 ?>
