@@ -8,7 +8,7 @@
 	<title>Información de Puntaje</title>
 </head>
 <body>
-	<h2>Degradado de Puntaje</h2>
+	<h2>Información Puntaje</h2>
 	<table border="1px">
 		<tr>
 			<td colspan="3">RV</td>
@@ -57,7 +57,7 @@
 			<td><?php echo $trigo[0] ?></td>
 			<td><?php echo $trigo[1] ?></td>
 			<td><?php echo $trigo[2] ?></td>
-			
+
 			<td><?php echo $fis[0] ?></td>
 			<td><?php echo $fis[1] ?></td>
 			<td><?php echo $fis[2] ?></td>
