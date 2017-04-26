@@ -1,12 +1,20 @@
 <?php
 	
-	session_start();
+	if(isset($_POST['grabar'])){
 
-	$claves=array();
-	$claves=$_SESSION['claves'];
-	foreach($claves as $mostrar){
-		echo $mostrar;
+		session_start();
+		$respuestas=array();
+
+		 for($i=1; $i<101; $i++){
+
+		 	$respuestas[$i]=$_POST["$i"];
+		 }
+
+		 $_SESSION['respuestas']=$respuestas;
+
+		header("Location: analizaData.php");
 	}
+
 
 ?>
 <!DOCTYPE html>
