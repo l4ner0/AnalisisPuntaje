@@ -244,21 +244,3 @@
 		</div>
 	</form>
 </body>
-=======
-<?php
-	
-	if(isset($_POST['grabar'])){
-
-		session_start();
-		$respuestas=array();
-
-		 for($i=1; $i<101; $i++){
-
-		 	$respuestas[$i]=$_POST["$i"];
-		 }
-
-		 $_SESSION['respuestas']=$respuestas;
-
-		header("Location: analizaData.php");
-	}
-?>
