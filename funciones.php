@@ -119,14 +119,27 @@
 		mysqli_close($conexion);
 	}
 
-	function verificar_repeticion($n_examen){
+	function verificar_repeticion($univ,$n_examen){
 
 		require 'conexion.php';
 
-		$sql="SELECT * FROM examen WHERE examen='$n_examen'";
+		$sql="SELECT * FROM examen WHERE examen='$n_examen' AND universidad= '$univ'";
 		$resultado=mysqli_query($conexion,$sql);
 
 		return mysqli_fetch_row($resultado);
+
+		mysqli_close($conexion);
+	}
+
+	function agregar_datos_examen($univ,$n_examen,$coment){
+
+		require 'conexion.php';
+
+		$sql="INSERT INTO examen (examen,universidad,comentario) VALUES ('$n_examen', '$univ', '$coment')";
+
+		mysqli_query($conexion,$sql);
+
+		mysqli_close($conexion);
 	}
 
 ?>

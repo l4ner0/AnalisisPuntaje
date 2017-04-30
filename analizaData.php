@@ -117,6 +117,7 @@
 		include 'funciones.php';
 
 		if($_SESSION['lleno']==0){
+			agregar_datos_examen($_SESSION['universidad'],$_SESSION['examen'],$_SESSION['comentario']);
 			grabarDatos($_SESSION['examen'],$alg,$arit,$bio,$fis,$geo,$quim,$rm,$rv,$trigo);
 			$_SESSION['lleno']=1;	
 		}else{
