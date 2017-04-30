@@ -1,8 +1,8 @@
 <?php
-	
+	session_start();
 	if(isset($_POST['grabar'])){
 
-		session_start();
+		
 		$respuestas=array();
 
 		 for($i=1; $i<101; $i++){
@@ -11,8 +11,10 @@
 		 }
 
 		 $_SESSION['respuestas']=$respuestas;
-
 		header("Location: analizaData.php");
+	
+	}else if(isset($_POST['regresar'])){
+		header('location: logout.php');
 	}
 
 
@@ -241,6 +243,7 @@
 		</div>
 		<div>
 			<input type="submit" name="grabar" value="Grabar">
+			<input type="submit" name="regresar" value="Volver Inicio">
 		</div>
 	</form>
 </body>

@@ -72,6 +72,9 @@
 		</tr>
 
 	</table>
+	<form action="logout.php" method="POST" >
+		<input type="submit" name="regresar" value="Volver Inicio">
+	</form>
 </body>
 </html>
 <?php

@@ -114,8 +114,16 @@
 			}
 		}
 
-		include 'verDegradado.php';
-		 verDegradado($rv,$rm,$alg,$arit,$geo,$trigo,$fis,$quim,$bio);
+		include 'funciones.php';
+
+		if($_SESSION['lleno']==0){
+			grabarDatos($_SESSION['examen'],$alg,$arit,$bio,$fis,$geo,$quim,$rm,$rv,$trigo);
+			$_SESSION['lleno']=1;	
+		}else{
+			modificarDatos($_SESSION['examen'],$alg,$arit,$bio,$fis,$geo,$quim,$rm,$rv,$trigo);
+		}
+		verDatos($_SESSION['examen']);
+			
 	
 ?>	
 
