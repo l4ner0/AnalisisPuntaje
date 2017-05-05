@@ -27,7 +27,7 @@
 	<meta charset="utf-8">
 	<title>Análisis de Puntaje</title>
 	<script type="text/javascript" src="scriptVerificacion.js"></script>
-	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
 	<div><h2>Programa de Análisis de Puntaje v1</h2></div>
