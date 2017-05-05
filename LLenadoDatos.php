@@ -26,29 +26,33 @@
 <head>
 	<meta charset="utf-8">
 	<title>Análisis de Puntaje</title>
+	<script type="text/javascript" src="scriptVerificacion.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
 </head>
 <body>
 	<div><h2>Programa de Análisis de Puntaje v1</h2></div>
 	<div>
-		<form method="POST" name="forlumarioLLenadoDatos">
+		<form method="POST" name="forlumarioLLenadoDatos" onsubmit="return validarDatos()">
 			<label>Universidad:</label>
-				<select name="universidad">
+			<select name="universidad">
 				<option value="0">Elija un opción</option>
 				<option value="UNALM">UNALM</option>
-			<option value="UNMSM">UNMSM</option>
-		</select>
-		<br>
-		<br>
-		<label>Año de examen:</label>
-		<input type="text" name="n_examen">
-		<br>
-		<br>
-		<label>Comentario:</label>
-		<br>
-		<textarea name="comentar" rows="4" cols="30"></textarea>
-		<br>
-		<input type="submit" name="grabar1" value="Grabar">
+				<option value="UNMSM">UNMSM</option>
+			</select>
+			<span class="error" id="e1"></span>
+			<br>
+			<br>
+			<label>Año de examen:</label>
+			<input type="text" name="n_examen">
+			<span class="error" id="e2"></span>
+			<br>
+			<br>
+			<label>Comentario:</label>
+			<br>
+			<textarea name="comentar" rows="4" cols="30"></textarea>
+			<br>
+			<input type="submit" name="grabar1" value="Grabar" >
 		</form>
 	</div>
-	<div style="font-size:16px; color:#cc0000;"><?php echo isset($error) ? utf8_decode($error): '' ?></div>
+	<div class="error"><?php echo isset($error) ? utf8_decode($error): '' ?></div>
 </body>

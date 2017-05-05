@@ -1,21 +1,35 @@
-(function(){
 
-	var formulario=document.getElementsByName('formularioLLenadoDatos')[0],
-		elementos=formulario.elements,
-		boton=document.getElementsById('grabar1');
+function validarDatos(){
+	var error = false;
+	var mensaje="";
+	
+	var univ=document.getElementsByName("universidad")[0].value;
 
-	var validarUniversidad=function(e){
-		if(formulario.universidad.value=="0"){
-			alert("Elije una universidad");
-			e.preventDefault();
+	if(univ == 0){
+		error=true;
+		mensaje="Debe elegir una universidad";
+	}else{
+		mensaje="";
+	}
+	document.getElementById("e1").innerHTML = mensaje;
 
-		}
-	};
+	var nExamen=document.getElementsByName("n_examen")[0].value;
+	
+	if(nExamen.trim() == ""){
+		error=true;
+		mensaje="Debe escribir el año del examen";
+	}else{
+		mensaje="";
+	}
+	document.getElementById("e2").innerHTML = mensaje;
 
-	var validar = function(e){
-		validarUniversidad(e);
-	};
+	if(!error){
 
-	formulario.addEventListener("submit",validar);
+		return true;
 
-})
+	}else{
+
+		return false;
+	}	
+
+}
