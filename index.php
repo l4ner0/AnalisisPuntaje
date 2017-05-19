@@ -5,7 +5,7 @@
 		header('Location: LLenadoDatos.php');
 	
 	}else if(isset($_POST['verPuntaje'])){
-		header('Location: verDegradado.php');
+		header('Location: reporte.php');
 	}
 
 ?>
@@ -22,14 +22,4 @@
 		<input type="submit" name="verPuntaje" value="Ver Puntaje">
 	</form>
 </body>
-<?php
 
-	if(isset($_POST['ingresarPuntaje'])){
-
-		header('Location: LLenadoDatos.php');
-	
-	}else if(isset($_POST['verPuntaje'])){
-		header('Location: verDegradado.php');
-	}
-
-?>

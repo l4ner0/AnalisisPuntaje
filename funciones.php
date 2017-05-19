@@ -69,7 +69,7 @@
 
 		include 'verDegradado.php';
 
-		verDegradado($datos_rv,$datos_rm,$datos_algebra,$datos_arit,$datos_geo,$datos_trigo,$datos_fis,$datos_quim,
+		verDegradado($num_examen,$datos_rv,$datos_rm,$datos_algebra,$datos_arit,$datos_geo,$datos_trigo,$datos_fis,$datos_quim,
 			$datos_bio);
 		
 		mysqli_close($conexion);

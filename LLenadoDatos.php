@@ -37,7 +37,6 @@
 			<select name="universidad">
 				<option value="0">Elija un opción</option>
 				<option value="UNALM">UNALM</option>
-				<option value="UNMSM">UNMSM</option>
 			</select>
 			<span class="error" id="e1"></span>
 			<br>

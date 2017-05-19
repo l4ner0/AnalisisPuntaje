@@ -4,6 +4,6 @@
 
 	session_destroy();
 
-	header('location: LLenadoDatos.php');
+	header('location: index.php');
 
 ?>

@@ -1,14 +1,14 @@
 <?php
-	function verDegradado($rv,$rm,$algebra,$arit,$geo,$trigo,$fis,$quim,$bio){
+	function verDegradado($num_examen,$rv,$rm,$algebra,$arit,$geo,$trigo,$fis,$quim,$bio){
 ?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Información de Puntaje</title>
+	<title>Información de Puntaje </title>
 </head>
 <body>
-	<h2>Información Puntaje</h2>
+	<h2>Información Puntaje <?php echo $num_examen; ?></h2>
 	<table border="1px">
 		<tr>
 			<td colspan="3">RV</td>
