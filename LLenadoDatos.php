@@ -19,7 +19,9 @@
 			$_SESSION['lleno']=0;
 			header("Location: FormularioClaves.php");
 		}
-	}
+	}else if(isset($_POST['atras'])){
+			header('Location: logout.php');
+		}
 ?>
 <!DOCTYPE html>
 <html>
@@ -32,7 +34,7 @@
 <body>
 	<div><h2>Programa de Análisis de Puntaje v1</h2></div>
 	<div>
-		<form method="POST" name="forlumarioLLenadoDatos" onsubmit="return validarDatos()">
+		<form method="POST" name="forlumarioLLenadoDatos">
 			<label>Universidad:</label>
 			<select name="universidad">
 				<option value="0">Elija un opción</option>
@@ -50,7 +52,8 @@
 			<br>
 			<textarea name="comentar" rows="4" cols="30"></textarea>
 			<br>
-			<input type="submit" name="grabar1" value="Grabar" >
+			<input type="submit" name="grabar1" value="Grabar" onclick="return validarDatos()" >
+			<input type="submit" name="atras" value="Atras">
 		</form>
 	</div>
 	<div class="error"><?php echo isset($error) ? utf8_decode($error): '' ?></div>

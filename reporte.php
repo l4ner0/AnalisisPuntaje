@@ -46,7 +46,7 @@
 		</select>
 		<br>
 		<input type="submit" name="buscar" value="Buscar">
-		<input type="submit" name="volver" value="Volver">
+		<input type="submit" name="volver" value="Atras">
 	</form>
 </body>
 </html>

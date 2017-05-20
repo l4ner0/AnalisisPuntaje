@@ -1,0 +1,34 @@
+analizaData.php : 		Recibe las clasves y respuestas, las compara y utilza una función 
+				para insertarla a la base de datos la información generada de la
+				comparación, además utiliza una función para visualizar un degradado 
+				de notas.
+
+conexion.php :			Crea la conexión a la base de datos.
+
+FormularioClaves.php :		Genera el formulario de claves.
+
+FormularioRespuestas.php :	Genera el formulario para las respuestas.
+
+verDegradado.php : 		Crea un tabla de degradado de puntaje.
+
+funciones.php :			Contiene funciones necesarias para  diversas operaciones como
+				grabar datos en la base de datos, ver datos de la base de datos, 
+				modificar datos de la base de datos, verificar repetición de datos.
+
+LLenadoDatos.php :		Obtener datos relevantes para clasificar los examenes por 
+				universidad y número de examen entre otras cosas.
+
+logout.php :			Destruye la sessión creada.
+
+index.php :			Da dos opciones, la de ver datos y la de ingresar nuevos datos.
+
+reporte.php :			Formulario para ingresar datos y buscar un determinado degradado de 
+				puntaje en la base de datos.
+
+/css/estilos.css :		Guarda  estilos que se utilizan para el maquetado de la aplicación.
+
+/js/scriptVerificacion.js :	Contiene  un script de verificación de entrada de datos.
+			  
+
+
+
